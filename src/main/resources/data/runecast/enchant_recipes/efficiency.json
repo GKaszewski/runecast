@@ -1,0 +1,43 @@
+{
+  "display_name": "Efficiency",
+  "enchantment": "runecast:efficiency",
+  "max_level": 5,
+  "effects": [
+    {"attribute": "mining_speed", "shape": "additive_multiplier", "per_level": 0.3}
+  ],
+  "recipes": [
+    {
+      "from_level": 0, "to_level": 1,
+      "targets": ["minecraft:wooden_pickaxe", "minecraft:stone_pickaxe", "minecraft:iron_pickaxe", "minecraft:golden_pickaxe", "minecraft:diamond_pickaxe",
+                  "minecraft:wooden_shovel", "minecraft:stone_shovel", "minecraft:iron_shovel", "minecraft:golden_shovel", "minecraft:diamond_shovel",
+                  "minecraft:wooden_axe", "minecraft:stone_axe", "minecraft:iron_axe", "minecraft:golden_axe", "minecraft:diamond_axe"],
+      "ingredients": [{"item": "minecraft:redstone", "count": 2}]
+    },
+    {
+      "from_level": 1, "to_level": 2,
+      "targets": ["minecraft:wooden_pickaxe", "minecraft:stone_pickaxe", "minecraft:iron_pickaxe", "minecraft:golden_pickaxe", "minecraft:diamond_pickaxe",
+                  "minecraft:wooden_shovel", "minecraft:stone_shovel", "minecraft:iron_shovel", "minecraft:golden_shovel", "minecraft:diamond_shovel",
+                  "minecraft:wooden_axe", "minecraft:stone_axe", "minecraft:iron_axe", "minecraft:golden_axe", "minecraft:diamond_axe"],
+      "ingredients": [{"item": "minecraft:redstone", "count": 4}]
+    },
+    {
+      "from_level": 2, "to_level": 3,
+      "targets": ["minecraft:iron_pickaxe", "minecraft:golden_pickaxe", "minecraft:diamond_pickaxe",
+                  "minecraft:iron_shovel", "minecraft:golden_shovel", "minecraft:diamond_shovel",
+                  "minecraft:iron_axe", "minecraft:golden_axe", "minecraft:diamond_axe"],
+      "ingredients": [{"item": "minecraft:redstone", "count": 4}, {"item": "minecraft:iron_ingot", "count": 1}]
+    },
+    {
+      "from_level": 3, "to_level": 4,
+      "targets": ["minecraft:iron_pickaxe", "minecraft:golden_pickaxe", "minecraft:diamond_pickaxe",
+                  "minecraft:iron_shovel", "minecraft:golden_shovel", "minecraft:diamond_shovel",
+                  "minecraft:iron_axe", "minecraft:golden_axe", "minecraft:diamond_axe"],
+      "ingredients": [{"item": "minecraft:redstone", "count": 6}, {"item": "minecraft:iron_ingot", "count": 2}]
+    },
+    {
+      "from_level": 4, "to_level": 5,
+      "targets": ["minecraft:diamond_pickaxe", "minecraft:diamond_shovel", "minecraft:diamond_axe"],
+      "ingredients": [{"item": "minecraft:redstone", "count": 8}, {"item": "minecraft:diamond", "count": 1}]
+    }
+  ]
+}

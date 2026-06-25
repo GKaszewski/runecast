@@ -1,0 +1,20 @@
+{
+  "required": true,
+  "minVersion": "0.8",
+  "package": "dev.gabrielkaszewski.runecast.mixin",
+  "compatibilityLevel": "JAVA_17",
+  "mixins": [
+    "ItemEntityMixin",
+    "BlockBreakMixin",
+    "BlockAfterBreakMixin",
+    "ItemStackDamageMixin",
+    "LivingEntityAccessor",
+    "LivingEntityAttackMixin",
+    "LivingEntityFallMixin"
+  ],
+  "server": [],
+  "client": [],
+  "injectors": {
+    "defaultRequire": 1
+  }
+}

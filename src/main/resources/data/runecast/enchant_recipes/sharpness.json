@@ -1,0 +1,35 @@
+{
+  "display_name": "Sharpness",
+  "enchantment": "runecast:sharpness",
+  "max_level": 5,
+  "effects": [
+    {"attribute": "attack_damage", "shape": "additive_flat", "per_level": 0.5}
+  ],
+  "recipes": [
+    {
+      "from_level": 0, "to_level": 1,
+      "targets": ["minecraft:wooden_sword", "minecraft:stone_sword", "minecraft:iron_sword", "minecraft:golden_sword", "minecraft:diamond_sword"],
+      "ingredients": [{"item": "minecraft:flint", "count": 2}]
+    },
+    {
+      "from_level": 1, "to_level": 2,
+      "targets": ["minecraft:wooden_sword", "minecraft:stone_sword", "minecraft:iron_sword", "minecraft:golden_sword", "minecraft:diamond_sword"],
+      "ingredients": [{"item": "minecraft:flint", "count": 2}, {"item": "minecraft:iron_ingot", "count": 1}]
+    },
+    {
+      "from_level": 2, "to_level": 3,
+      "targets": ["minecraft:wooden_sword", "minecraft:stone_sword", "minecraft:iron_sword", "minecraft:golden_sword", "minecraft:diamond_sword"],
+      "ingredients": [{"item": "minecraft:flint", "count": 3}, {"item": "minecraft:iron_ingot", "count": 2}]
+    },
+    {
+      "from_level": 3, "to_level": 4,
+      "targets": ["minecraft:iron_sword", "minecraft:golden_sword", "minecraft:diamond_sword"],
+      "ingredients": [{"item": "minecraft:flint", "count": 3}, {"item": "minecraft:diamond", "count": 1}]
+    },
+    {
+      "from_level": 4, "to_level": 5,
+      "targets": ["minecraft:iron_sword", "minecraft:golden_sword", "minecraft:diamond_sword"],
+      "ingredients": [{"item": "minecraft:flint", "count": 4}, {"item": "minecraft:diamond", "count": 2}]
+    }
+  ]
+}

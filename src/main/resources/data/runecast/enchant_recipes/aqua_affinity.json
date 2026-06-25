@@ -1,0 +1,15 @@
+{
+  "display_name": "Aqua Affinity",
+  "enchantment": "runecast:aqua_affinity",
+  "max_level": 1,
+  "effects": [
+    {"custom": "runecast:underwater_mining_boost"}
+  ],
+  "recipes": [
+    {
+      "from_level": 0, "to_level": 1,
+      "targets": ["minecraft:leather_helmet", "minecraft:chainmail_helmet", "minecraft:iron_helmet", "minecraft:golden_helmet", "minecraft:diamond_helmet"],
+      "ingredients": [{"item": "minecraft:dye", "count": 3}, {"item": "minecraft:clay_ball", "count": 2}]
+    }
+  ]
+}

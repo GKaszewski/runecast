@@ -1,0 +1,27 @@
+{
+  "display_name": "Sharpness",
+  "enchantment": "runecast:sharpness",
+  "max_level": 5,
+  "effects": [
+    {"attribute": "attack_damage", "shape": "additive_flat", "per_level": 0.5}
+  ],
+  "recipes": [
+    {
+      "from_level": 0,
+      "to_level": 1,
+      "targets": ["minecraft:wooden_sword", "minecraft:stone_sword"],
+      "ingredients": [
+        {"item": "minecraft:flint", "count": 2}
+      ]
+    },
+    {
+      "from_level": 1,
+      "to_level": 2,
+      "targets": ["minecraft:wooden_sword", "minecraft:stone_sword"],
+      "ingredients": [
+        {"item": "minecraft:flint", "count": 3},
+        {"item": "minecraft:diamond", "count": 1}
+      ]
+    }
+  ]
+}

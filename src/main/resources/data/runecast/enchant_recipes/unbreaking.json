@@ -1,0 +1,29 @@
+{
+  "display_name": "Unbreaking",
+  "enchantment": "runecast:unbreaking",
+  "max_level": 3,
+  "effects": [
+    {"attribute": "durability_skip_chance", "shape": "inverse_chance", "denominator": 1}
+  ],
+  "recipes": [
+    {
+      "from_level": 0, "to_level": 1,
+      "targets": ["minecraft:wooden_pickaxe", "minecraft:stone_pickaxe", "minecraft:iron_pickaxe", "minecraft:golden_pickaxe", "minecraft:diamond_pickaxe",
+                  "minecraft:wooden_sword", "minecraft:stone_sword", "minecraft:iron_sword", "minecraft:golden_sword", "minecraft:diamond_sword",
+                  "minecraft:leather_boots", "minecraft:chainmail_boots", "minecraft:iron_boots", "minecraft:golden_boots", "minecraft:diamond_boots"],
+      "ingredients": [{"item": "minecraft:obsidian", "count": 2}]
+    },
+    {
+      "from_level": 1, "to_level": 2,
+      "targets": ["minecraft:iron_pickaxe", "minecraft:golden_pickaxe", "minecraft:diamond_pickaxe",
+                  "minecraft:iron_sword", "minecraft:golden_sword", "minecraft:diamond_sword",
+                  "minecraft:iron_boots", "minecraft:golden_boots", "minecraft:diamond_boots"],
+      "ingredients": [{"item": "minecraft:obsidian", "count": 3}, {"item": "minecraft:iron_ingot", "count": 1}]
+    },
+    {
+      "from_level": 2, "to_level": 3,
+      "targets": ["minecraft:diamond_pickaxe", "minecraft:diamond_sword", "minecraft:diamond_boots"],
+      "ingredients": [{"item": "minecraft:obsidian", "count": 4}, {"item": "minecraft:diamond", "count": 1}]
+    }
+  ]
+}

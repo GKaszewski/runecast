@@ -1,35 +1,23 @@
 {
   "schemaVersion": 1,
-  "id": "%s",
+  "id": "runecast",
   "version": "${version}",
-
-  "name": "Example Mod",
-  "description": "This is an example description! Tell everyone what your mod is about!",
-  "authors": [
-    "Me!"
-  ],
-  "contact": {
-    "homepage": "https://glass-launcher.net/",
-    "sources": "https://github.com/calmilamsy/stationapi-example-mod"
-  },
-
+  "name": "Runecast",
+  "description": "Enchant tools and gear by throwing items on the ground.",
+  "authors": ["gabrielkaszewski"],
   "license": "CC0-1.0",
-  "icon": "assets/%s/icon.png",
-
+  "icon": "assets/runecast/icon.png",
   "environment": "*",
   "entrypoints": {
     "stationapi:event_bus": [
-      "%s.events.init.InitListener"
+      "dev.gabrielkaszewski.runecast.events.init.InitListener"
     ],
     "stationapi:event_bus_client": [
+      "dev.gabrielkaszewski.runecast.events.init.ClientListener"
     ],
-    "stationapi:event_bus_server": [
-    ]
+    "stationapi:event_bus_server": []
   },
-  "mixins": [
-    "%s.mixins.json"
-  ],
-
+  "mixins": ["runecast.mixins.json"],
   "depends": {
     "minecraft": "1.0.0-beta.7.3"
   }

@@ -1,0 +1,30 @@
+{
+  "display_name": "Feather Falling",
+  "enchantment": "runecast:feather_falling",
+  "max_level": 4,
+  "effects": [
+    {"attribute": "fall_damage_reduction", "shape": "reductive", "per_level": 0.2, "cap": 0.8}
+  ],
+  "recipes": [
+    {
+      "from_level": 0, "to_level": 1,
+      "targets": ["minecraft:leather_boots", "minecraft:chainmail_boots", "minecraft:iron_boots", "minecraft:golden_boots", "minecraft:diamond_boots"],
+      "ingredients": [{"item": "minecraft:feather", "count": 4}]
+    },
+    {
+      "from_level": 1, "to_level": 2,
+      "targets": ["minecraft:leather_boots", "minecraft:chainmail_boots", "minecraft:iron_boots", "minecraft:golden_boots", "minecraft:diamond_boots"],
+      "ingredients": [{"item": "minecraft:feather", "count": 4}, {"item": "minecraft:string", "count": 2}]
+    },
+    {
+      "from_level": 2, "to_level": 3,
+      "targets": ["minecraft:iron_boots", "minecraft:golden_boots", "minecraft:diamond_boots"],
+      "ingredients": [{"item": "minecraft:feather", "count": 6}, {"item": "minecraft:string", "count": 2}]
+    },
+    {
+      "from_level": 3, "to_level": 4,
+      "targets": ["minecraft:iron_boots", "minecraft:golden_boots", "minecraft:diamond_boots"],
+      "ingredients": [{"item": "minecraft:feather", "count": 8}, {"item": "minecraft:string", "count": 4}, {"item": "minecraft:slime_ball", "count": 1}]
+    }
+  ]
+}
